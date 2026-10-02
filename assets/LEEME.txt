@@ -1,0 +1,2 @@
+Recursos opcionales
+Añade aquí portadas autorizadas de los libros. En index.html, busca EDITAR para insertarlas en la ficha correspondiente. No se han inventado ni utilizado portadas.
