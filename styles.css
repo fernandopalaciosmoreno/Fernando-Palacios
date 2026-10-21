@@ -28,3 +28,7 @@ h1{font-size:clamp(3.2rem,7.4vw,6.7rem);line-height:1.08;letter-spacing:-.045em;
 /* Oculta exclusivamente el lomo incluido en tres archivos originales. */
 .book-art .front-only{position:relative;height:100%;aspect-ratio:var(--front-ratio);max-width:100%;overflow:hidden;box-shadow:0 12px 22px #0005}
 .book-art .front-only img{position:absolute;top:0;left:var(--spine-offset);width:var(--full-width);max-width:none;height:100%;max-height:none;object-fit:fill;margin:0;box-shadow:none}
+
+/* Portada de un libro aún en prensa. */
+.upcoming .upcoming-with-cover{grid-column:1/-1;display:grid;grid-template-columns:240px minmax(0,1fr);gap:36px;align-items:center}.upcoming-with-cover .book-art{height:330px;margin:0;padding:12px}.upcoming-book-info{min-width:0}
+@media(max-width:600px){.upcoming .upcoming-with-cover{grid-template-columns:1fr;gap:22px}.upcoming-with-cover .book-art{height:390px}}
