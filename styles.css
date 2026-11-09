@@ -32,3 +32,8 @@ h1{font-size:clamp(3.2rem,7.4vw,6.7rem);line-height:1.08;letter-spacing:-.045em;
 /* Portada de un libro aún en prensa. */
 .upcoming .upcoming-with-cover{grid-column:1/-1;display:grid;grid-template-columns:240px minmax(0,1fr);gap:36px;align-items:center}.upcoming-with-cover .book-art{height:330px;margin:0;padding:12px}.upcoming-book-info{min-width:0}
 @media(max-width:600px){.upcoming .upcoming-with-cover{grid-template-columns:1fr;gap:22px}.upcoming-with-cover .book-art{height:390px}}
+
+/* Vista previa del retrato: no modifica el sitio original. */
+.author-heading{display:flex;align-items:center;justify-content:space-between;gap:40px}.author-heading h1{order:0;min-width:0;font-size:clamp(3.2rem,7.4vw,6.7rem)}.author-photo{order:1;position:relative;flex:0 0 150px;width:150px;height:150px;border-radius:50%;overflow:hidden;border:1px solid var(--accent)}.author-photo img{position:absolute;max-width:none;width:225px;height:auto;left:-37.5px;top:-6px}
+@media(max-width:900px){.author-heading{gap:22px}.author-heading h1{font-size:clamp(2.8rem,6.6vw,5rem)}}
+@media(max-width:600px){.author-heading{flex-direction:column;align-items:stretch;gap:0;padding-top:26px}.author-photo{order:0;align-self:center;flex:0 0 110px;width:110px;height:110px}.author-photo img{width:165px;left:-27.5px;top:-4px}.author-heading h1{order:1;font-size:clamp(2.4rem,10vw,3.8rem);margin-top:30px}}
