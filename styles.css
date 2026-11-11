@@ -37,3 +37,11 @@ h1{font-size:clamp(3.2rem,7.4vw,6.7rem);line-height:1.08;letter-spacing:-.045em;
 .author-heading{display:flex;align-items:center;justify-content:space-between;gap:40px}.author-heading h1{order:0;min-width:0;font-size:clamp(3.2rem,7.4vw,6.7rem)}.author-photo{order:1;position:relative;flex:0 0 150px;width:150px;height:150px;border-radius:50%;overflow:hidden;border:1px solid var(--accent)}.author-photo img{position:absolute;max-width:none;width:225px;height:auto;left:-37.5px;top:-6px}
 @media(max-width:900px){.author-heading{gap:22px}.author-heading h1{font-size:clamp(2.8rem,6.6vw,5rem)}}
 @media(max-width:600px){.author-heading{flex-direction:column;align-items:stretch;gap:0;padding-top:26px}.author-photo{order:0;align-self:center;flex:0 0 110px;width:110px;height:110px}.author-photo img{width:165px;left:-27.5px;top:-4px}.author-heading h1{order:1;font-size:clamp(2.4rem,10vw,3.8rem);margin-top:30px}}
+
+/* Enlaces de compra comprobados el 11 de noviembre de 2026. */
+.purchase-intro{max-width:670px;margin:-20px 0 40px;font-size:.9375rem;line-height:1.65}
+.book-purchase{padding-top:20px}
+.purchase-link{display:inline-flex;align-items:center;justify-content:space-between;gap:12px;min-height:46px;max-width:100%;padding:10px 14px;border:1px solid #8c775e;color:var(--accent);font-size:.8125rem;line-height:1.45;transition:background .2s,color .2s,border-color .2s}
+.purchase-link:hover{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+.purchase-link:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
+@media(max-width:600px){.purchase-intro{margin:0 0 32px}.purchase-link{min-height:48px}}
